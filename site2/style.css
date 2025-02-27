@@ -1,0 +1,174 @@
+#titulo {
+  color: tomato;
+}
+
+p.especial {
+  color: green;
+}
+
+p.texto {
+  color: slateblue;
+}
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: brown;
+}
+
+* {
+  font-size: 24px;
+  /* color: black; */
+}
+
+/* Esto es un comentario */
+
+/* 
+    Esto es un comentario 
+    de muchas lineas
+*/
+
+/*
+.color {
+    color:#ff0000;
+}
+.color {
+    color:rgb(0, 255, 0);
+}
+*/
+
+.color {
+  /* border: 5px red outset; */
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 2rem;
+}
+
+#fondo {
+  background-color: rgba(255, 0, 0);
+  /* opacity: 0.3; */
+  height: 200px;
+  background: red url("cerdobebe.jpg") repeat-y center bottom;
+  background-size: 100 px 100 px;
+}
+
+.margen {
+  background-color: chocolate;
+  margin: 15px;
+  padding: 30px 15px 5px;
+  border: solid 2px black;
+  height: 100px;
+  width: 50px;
+  overflow: scroll;
+  outline: 1px solid red;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  text-decoration: overline;
+  text-shadow: 3px 5px 5px blue;
+}
+
+a:link {
+  color: blueviolet;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: yellow;
+}
+a:active{
+  color: red;
+}
+
+ul{
+  color: brown;
+  background-color: aqua;
+  list-style-type: circle;
+  /* padding-left: 0; */
+  /* list-style-position: inside; */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: solid 1px #eee;
+  padding: 5px;
+}
+
+th{
+  background-color: tomato;
+  color:azure;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tr:hover {
+  background-color: #aaa;
+  cursor: pointer
+}
+
+span {
+  display: block;
+  /* display: none; */
+  /* visibility: hidden; */
+  max-width: 300px;
+  background-color: bisque;
+}
+
+.inline {
+  display: inline;
+}
+
+#position {
+  position: sticky;
+  left: 20px;
+  top: 25px;
+
+}
+
+.left {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.right{
+  float: right;
+
+}
+
+.container {
+  height: 200px;
+}
+
+.column {
+  margin: 0;
+  padding: 10px 0;
+  width: 33.3%;
+}
+
+.inline-block {
+  display: inline-block;
+  height: 55px;
+  background-color: red;
+}
+.center {
+  padding: 50px 0;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  background-color: aqua;
+}

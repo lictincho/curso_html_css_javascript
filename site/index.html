@@ -1,113 +1,43 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<!-- Aplicamos al "Blog" CSS. -->
 <head>
-	<title>Mi primera web</title>
-	<style>
-		table, th, td {
-			border: 1px solid black;	
-		}
-	</style>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-	<!-- titulos y subtitulos -->
-	<h1>Solo usar para titulos y subtitulos.</h1> 
-	<h2>Mi segundo heading</h2> 
-	<h3>Mi tercer heading</h3>
-
-	<!-- ul es lista no ordenada -->
-	<ul>
-		<li>Elemento 1</li>
-		<li>Elemento 2</li>
-		<li>Elemento 3</li>
-		<li>Elemento 4</li>
-	 </ul>
-	 <!-- ol es lista ordenada -->
-	 <ol>
-		<li value="50">Elemento 1</li>
-		<li>Elemento 2</li>
-		<li>Elemento 3</li>
-		<li>Elemento 4</li>
-		<li>
-			<ol>
-				<li style="list-style: lower-alpha;">Subelemento 1</li>
-				<li style="list-style: lower-alpha;">Subelemento 2</li>
-			</ol>
-		</li>
-	 </ol>
-
-	<h4>Mi cuarto heading</h4>
-	<h5>Chanchito feliz</h5>
-
-	<!-- tablas -->
-	<table style="width: 500px;">
-		<thead>
-			<tr>
-				<th>Codigo</th>
-				<th>Producto</th>
-				<th>Precio</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>123456</td>
-				<td>Banana</td>
-				<td>50 USD</td>
-			</tr>
-			<tr>
-				<td>413456</td>
-				<td>Manzanas doradas del paraiso</td>
-				<td>20.5 USD</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<td></td>
-			<td></td>
-			<td>TOTAL: 70.5 USD</td>
-		</tfoot>
-
-	</table>
-
-	<h6>Hasta 6 subtitulos</h6>
-	<p>Habia una vez un chanchito.</p>
-	<p>Chanchito esta triste.</p>
-	<!-- hr separa -->
-	<hr>
-	<h2>Chanchito feo </h2>
-
-	<!-- parrafos + br salto de lines, span formato-->
-	<p>
-		Este es otro chanchito.
-		Lo haremos <span style="color:rgb(255, 0, 238)">mucho mas largo</span> y es para mostrar 
-		la <br> etiqueta de spam (salto de linea con br). 
-	</p>
-	<br>
-
-	<!-- links -->
-	<a target="_blank" href="https://www.google.com">Ir a Google</a>
-	
-	<br><br>
-	
-	 <!-- formularios -->
-	 <form action="/formulario" method="POST">
-		<label for="nombre">Nombre</label>
-		<input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Martin"/>
-		<br>
-		<label for="apellido">Apellido</label>
-		<input value="feliz" type="text" id="apellido" name="apellido" placeholder="Ortega"/>
-		<br>
-		<label for="comentario">Comentario</label>
-		<textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea>
-		<br>
-		<button type="reset">Reset</button>
-		<button type="button"><img src="img/buttonred.png" height="20">Botón</button>
-		<button type="submit">Enviar</button>
-	</form>
-
-	<br><br>
-
-	<!-- imagenes -->
-	<img src="img/cafecitoneed.png" height="200"/>
-	
+    <header id="titulo">
+        <h1>Blog de LicTincho</h1>
+    </header>
+    <section class="container">
+        <article class="post">
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/cafecitoneed.png" width="300"/>
+            <p>Texto del articulo de prueba, cafecito.</p>
+        </article>
+        <article class="post">
+            <h2>Segundo post</h2>
+            <p>Descripcion de mi post 2</p>
+            <img src="img/drstone.jpg" width="300"/>
+            <p>Texto del articulo de prueba 2, anime.</p>
+        </article>
+        <article class="post">
+            <h2>Tercer post</h2>
+            <p>Descripcion de mi post 3</p>
+            <img src="img/html.png" width="300"/>
+            <p>Texto del articulo de prueba 3, html.</p>
+        </article>
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Volver al inicio</a>
+            <a href="mailto:mrtn.bo@gmail.com">Contactame aqui</a>
+        </section>
+        <p>Copiright 2025</p>
+    </footer>
 </body>
 </html>
